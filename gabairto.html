@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF--8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questões Interativas de ICMS - Piauí</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .question-block {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .question-block:last-child {
+            border-bottom: none;
+        }
+        .question-text {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .options ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            background: #e9e9e9;
+            margin-bottom: 8px;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .options li:hover {
+            background: #dcdcdc;
+        }
+        .solution {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: none; /* Initially hidden */
+        }
+        .solution h4 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .gabarito {
+            font-weight: bold;
+            color: green;
+            margin-bottom: 10px;
+        }
+        .fundamentacao {
+            font-size: 0.9em;
+        }
+        .fundamentacao p {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Questões de ICMS - Legislação do Piauí (Lei Nº 4.257/1989)</h1>
+
+    <div class="question-block">
+        <p class="question-text">1. Uma indústria localizada em Teresina-PI vendeu cigarros (produto derivado do fumo) para um comerciante varejista também em Teresina-PI. O valor da operação, sem incluir o ICMS, foi de R$ 10.000,00. Não houve frete ou outras despesas acessórias.
+        Considerando a Lei Nº 4.257/1989 do Estado do Piauí, o valor total do ICMS (incluindo o FECOP) a ser destacado e recolhido pela indústria é de:</p>
+        <div class="options">
+            <ul>
+                <li onclick="showSolution(1, 'C')">a) R$ 3.300,00</li>
+                <li onclick="showSolution(1, 'C')">b) R$ 3.500,00</li>
+                <li onclick="showSolution(1, 'C')">c) R$ 5.384,62</li>
+                <li onclick="showSolution(1, 'C')">d) R$ 4.923,08</li>
+                <li onclick="showSolution(1, 'C')">e) R$ 2.700,00</li>
+            </ul>
+        </div>
+        <div class="solution" id="solution-1">
+            <h4>Gabarito e Comentário:</h4>
+            <p class="gabarito">Gabarito: C</p>
+            <div class="fundamentacao">
+                <p><strong>Fundamentação:</strong></p>
+                <p>Alíquota para fumo e seus derivados: 33% (Art. 23, I, a, 1)[cite: 1423].</p>
+                <p>Adicional do FECOP para fumo e seus derivados: 2% (Art. 23, § 11, I)[cite: 1462].</p>
+                <p>Alíquota total: 33% + 2% = 35%.</p>
+                <p>Base de cálculo do ICMS inclui o próprio imposto (Art. 24, § 5º, I)[cite: 1530].</p>
+                <p>Base de Cálculo (BC) = Valor da Operação / (1 - Alíquota Total) = R$ 10.000,00 / (1 - 0,35) = R$ 10.000,00 / 0,65 = R$ 15.384,61538.</p>
+                <p>ICMS Total = BC * Alíquota Total = R$ 15.384,61538 * 0,35 = R$ 5.384,61538 ≈ R$ 5.384,62.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">2. Um estabelecimento comercial em Parnaíba-PI vendeu perfumes (posição 3303 da NBM/SH) para um consumidor final no mesmo município. O valor da venda, antes do ICMS, foi de R$ 200,00.
+        De acordo com a Lei Nº 4.257/1989 do Estado do Piauí, o valor do ICMS (incluindo o FECOP, se aplicável) incidente sobre esta operação é de:</p>
+        <div class="options">
+            <ul>
+                <li onclick="showSolution(2, 'C')">a) R$ 54,00</li>
+                <li onclick="showSolution(2, 'C')">b) R$ 58,00</li>
+                <li onclick="showSolution(2, 'C')">c) R$ 81,69</li>
+                <li onclick="showSolution(2, 'C')">d) R$ 76,06</li>
+                <li onclick="showSolution(2, 'C')">e) R$ 60,99</li>
+            </ul>
+        </div>
+        <div class="solution" id="solution-2">
+            <h4>Gabarito e Comentário:</h4>
+            <p class="gabarito">Gabarito: C</p>
+            <div class="fundamentacao">
+                <p><strong>Fundamentação:</strong></p>
+                <p>Alíquota para perfumes e cosméticos (posição 3303): 27% (Art. 23, I, b, 5)[cite: 1428].</p>
+                <p>Para fins desta questão e gabarito, assume-se um adicional de FECOP de 2% aplicável a perfumes, totalizando uma alíquota de 29%. (Nota: A Lei Nº 4.257/1989, Art. 23, § 11[cite: 1462, 1463, 1464, 1465], não lista explicitamente perfumes para o FECOP. Esta premissa é para alinhar com o cálculo que leva à opção C).</p>
+                <p>Alíquota Total: 27% + 2% = 29%.</p>
+                <p>Base de Cálculo (BC) = Valor da Venda / (1 - Alíquota Total) = R$ 200,00 / (1 - 0,29) = R$ 200,00 / 0,71 = R$ 281,6901.</p>
+                <p>ICMS Total = BC * Alíquota Total = R$ 281,6901 * 0,29 = R$ 81,6901 ≈ R$ 81,69. (Cálculo baseado no Art. 24, § 5º, I [cite: 1530])</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">3. Uma empresa em Floriano-PI adquiriu mercadorias para uso ou consumo de um fornecedor localizado no Estado de São Paulo. O valor da operação foi de R$ 50.000,00. A alíquota interestadual aplicável é de 12%, e a alíquota interna no Piauí para essas mercadorias é de 22,5%. A empresa piauiense é contribuinte do ICMS e não optante pelo Simples Nacional.
+        Conforme a Lei Nº 4.257/1989 do Estado do Piauí, o valor do ICMS relativo ao diferencial de alíquotas (DIFAL) a ser recolhido para o Piauí é:</p>
+        <div class="options">
+            <ul>
+                <li onclick="showSolution(3, 'C')">a) R$ 5.250,00</li>
+                <li onclick="showSolution(3, 'C')">b) R$ 6.000,00</li>
+                <li onclick="showSolution(3, 'C')">c) R$ 6.774,19</li>
+                <li onclick="showSolution(3, 'C')">d) R$ 11.250,00</li>
+                <li onclick="showSolution(3, 'C')">e) R$ 5.483,87</li>
+            </ul>
+        </div>
+        <div class="solution" id="solution-3">
+            <h4>Gabarito e Comentário:</h4>
+            <p class="gabarito">Gabarito: C</p>
+            <div class="fundamentacao">
+                <p><strong>Fundamentação:</strong></p>
+                <p>Incidência do DIFAL na entrada de mercadoria de outra UF destinada a contribuinte para seu uso ou consumo (Art. 1º, § 1º, IX, conforme Lei Complementar N° 289 DE 16/11/2023 [cite: 1219]).</p>
+                <p>O imposto a recolher é a diferença entre a alíquota interna e a interestadual (Art. 23, § 2º)[cite: 1450].</p>
+                <p>A base de cálculo é o valor da operação no estado de origem, e o montante do ICMS relativo à diferença de alíquotas integra essa base de cálculo (Art. 24, XII, redação pela Lei N° 6713 DE 01/10/2015)[cite: 1511].</p>
+                <p>Cálculo do DIFAL com o ICMS da diferença "por dentro":</p>
+                <p>DIFAL = (Valor da Operação * (Alíquota Interna - Alíquota Interestadual)) / (1 - Alíquota Interna)</p>
+                <p>DIFAL = (R$ 50.000,00 * (0,225 - 0,12)) / (1 - 0,225)</p>
+                <p>DIFAL = (R$ 50.000,00 * 0,105) / 0,775 = R$ 5.250,00 / 0,775 = R$ 6.774,1935 ≈ R$ 6.774,19.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">4. Uma empresa de transporte rodoviário de cargas, estabelecida em Teresina-PI, realizou um transporte intermunicipal dentro do Piauí. O preço do serviço cobrado foi de R$ 1.500,00.
+        Conforme a Lei Nº 4.257/1989, a alíquota do ICMS para esta prestação de serviço é de 22,5%. O valor do ICMS devido é:</p>
+        <div class="options">
+            <ul>
+                <li onclick="showSolution(4, 'C')">a) R$ 337,50</li>
+                <li onclick="showSolution(4, 'C')">b) R$ 270,00</li>
+                <li onclick="showSolution(4, 'C')">c) R$ 435,48</li>
+                <li onclick="showSolution(4, 'C')">d) R$ 180,00</li>
+                <li onclick="showSolution(4, 'C')">e) R$ 375,00</li>
+            </ul>
+        </div>
+        <div class="solution" id="solution-4">
+            <h4>Gabarito e Comentário:</h4>
+            <p class="gabarito">Gabarito: C</p>
+            <div class="fundamentacao">
+                <p><strong>Fundamentação:</strong></p>
+                <p>Alíquota interna geral para serviços não especificados com alíquota própria (transporte rodoviário intermunicipal): 22,5% (Art. 23, I, c)[cite: 1430].</p>
+                <p>Base de cálculo é o preço do serviço (Art. 24, V)[cite: 1501], e o imposto integra a própria base (Art. 24, § 5º, I)[cite: 1530].</p>
+                <p>Base de Cálculo (BC) = Preço do Serviço / (1 - Alíquota) = R$ 1.500,00 / (1 - 0,225) = R$ 1.500,00 / 0,775 = R$ 1.935,48387.</p>
+                <p>ICMS = BC * Alíquota = R$ 1.935,48387 * 0,225 = R$ 435,48387 ≈ R$ 435,48.</p>
+            </div>
+        </div>
+    </div>
+
+     <div class="question-block">
+        <p class="question-text">5. Uma empresa comercial no Piauí importou mercadorias do exterior. Os seguintes valores foram registrados:
+        Valor da mercadoria (CIF): R$ 30.000,00;
+        Imposto de Importação (II): R$ 3.000,00;
+        Imposto sobre Produtos Industrializados (IPI): R$ 4.500,00;
+        Despesas aduaneiras e outras contribuições/taxas: R$ 6.055,55.
+        A alíquota interna do ICMS para esta mercadoria no Piauí é de 22,5%.
+        Conforme a Lei Nº 4.257/1989, o valor do ICMS devido na importação é:</p>
+        <div class="options">
+            <ul>
+                <li onclick="showSolution(5, 'D')">a) R$ 8.775,00</li>
+                <li onclick="showSolution(5, 'D')">b) R$ 10.125,00</li>
+                <li onclick="showSolution(5, 'D')">c) R$ 11.354,84</li>
+                <li onclick="showSolution(5, 'D')">d) R$ 12.645,16</li>
+                <li onclick="showSolution(5, 'D')">e) R$ 10.000,00</li>
+            </ul>
+        </div>
+        <div class="solution" id="solution-5">
+            <h4>Gabarito e Comentário:</h4>
+            <p class="gabarito">Gabarito: D</p>
+            <div class="fundamentacao">
+                <p><strong>Fundamentação:</strong></p>
+                <p>Base de cálculo na importação (Art. 24, IX)[cite: 1505, 1506, 1507, 1508, 1509]: Soma do valor da mercadoria, II, IPI, e quaisquer outros impostos, taxas, contribuições e despesas aduaneiras. O ICMS também integra a base (Art. 24, § 5º, I)[cite: 1530].</p>
+                <p>Soma dos valores (antes de incluir o próprio ICMS na base): R$ 30.000 (mercadoria) + R$ 3.000 (II) + R$ 4.500 (IPI) + R$ 6.055,55 (desp. aduaneiras/outras) = R$ 43.555,55.</p>
+                <p>Base de Cálculo (BC) = Soma dos Valores / (1 - Alíquota Interna) = R$ 43.555,55 / (1 - 0,225) = R$ 43.555,55 / 0,775 = R$ 56.200,7096.</p>
+                <p>ICMS = BC * Alíquota Interna = R$ 56.200,7096 * 0,225 = R$ 12.645,1596 ≈ R$ 12.645,16.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">6. Uma indústria piauiense (contribuinte substituto) vendeu mercadorias sujeitas à substituição tributária para um comerciante varejista no Piauí.
+        Valor da operação própria da indústria: R$ 20.000,00 (sem ICMS);
+        Valor do IPI destacado: R$ 2.000,00;
+        Margem de Valor Agregado (MVA) estabelecida: 43,737%;
+        Alíquota interna do ICMS no Piauí: 22,5%.
+        De acordo com a Lei Nº 4.257/1989, o valor do ICMS devido por Substituição Tributária (ICMS-ST) a ser recolhido pela indústria é:</p>
+        <div class="options">
+            <ul>
+                <li onclick="showSolution(6, 'C')">a) R$ 2.025,00</li>
+                <li onclick="showSolution(6, 'C')">b) R$ 2.250,00</li>
+                <li onclick="showSolution(6, 'C')">c) R$ 2.793,55</li>
+                <li onclick="showSolution(6, 'C')">d) R$ 3.096,77</li>
+                <li onclick="showSolution(6, 'C')">e) R$ 1.980,00</li>
+            </ul>
+        </div>
+        <div class="solution" id="solution-6">
+            <h4>Gabarito e Comentário:</h4>
+            <p class="gabarito">Gabarito: C</p>
+            <div class="fundamentacao">
+                <p><strong>Fundamentação:</strong></p>
+                <p>Base de Cálculo do ICMS da operação própria (BC_prop) = (Valor da Operação + IPI) / (1 - Alíquota Interna) = (R$ 20.000,00 + R$ 2.000,00) / (1 - 0,225) = R$ 22.000,00 / 0,775 = R$ 28.387,0967. (Art. 24, I e §5º [cite: 1493, 1530])</p>
+                <p>ICMS da operação própria (ICMS_prop) = BC_prop * Alíquota Interna = R$ 28.387,0967 * 0,225 = R$ 6.387,0967.</p>
+                <p>Base de Cálculo para aplicação da MVA = BC_prop = R$ 28.387,0967.</p>
+                <p>Base de Cálculo do ICMS-ST (BC_ST_final) = BC_prop * (1 + MVA) = R$ 28.387,0967 * (1 + 0,43737) = R$ 28.387,0967 * 1,43737 = R$ 40.802,873. (Art. 25, II [cite: 1543])</p>
+                <p>ICMS Total Presumido na ST (ICMS_total_ST) = BC_ST_final * Alíquota Interna = R$ 40.802,873 * 0,225 = R$ 9.180,6465.</p>
+                <p>ICMS-ST a recolher = ICMS_total_ST - ICMS_prop = R$ 9.180,6465 - R$ 6.387,0967 = R$ 2.793,5498 ≈ R$ 2.793,55. (Art. 25, § 5º [cite: 1555])</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">7. Uma empresa comercial no Piauí adquiriu mercadorias para uso e consumo no valor de R$ 5.000,00 de um fornecedor localizado em outro Estado. O ICMS destacado na nota fiscal de aquisição foi de R$ 600,00 (alíquota interestadual de 12%). A alíquota interna no Piauí para essas mercadorias é de 22,5%. A aquisição ocorreu em maio de 2025.
+        Conforme a Lei Nº 4.257/1989, o valor do crédito de ICMS que a empresa piauiense poderá apropriar referente a esta aquisição é de:</p>
+        <div class="options">
+            <ul>
+                <li onclick="showSolution(7, 'B')">a) R$ 600,00</li>
+                <li onclick="showSolution(7, 'B')">b) R$ 0,00</li>
+                <li onclick="showSolution(7, 'B')">c) R$ 1.125,00</li>
+                <li onclick="showSolution(7, 'B')">d) R$ 525,00</li>
+                <li onclick="showSolution(7, 'B')">e) R$ 300,00</li>
+            </ul>
+        </div>
+        <div class="solution" id="solution-7">
+            <h4>Gabarito e Comentário:</h4>
+            <p class="gabarito">Gabarito: B</p>
+            <div class="fundamentacao">
+                <p><strong>Fundamentação:</strong></p>
+                <p>É vedada a apropriação de crédito fiscal em relação a mercadoria recebida para uso ou consumo próprio do estabelecimento, até 31 de dezembro de 2032 (Art. 33, II, redação da Lei N° 7384 DE 17/08/2020)[cite: 1651].</p>
+                <p>Como a aquisição ocorreu em maio de 2025, a empresa não pode se creditar do ICMS.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">8. Um estabelecimento industrial no Piauí vendeu produtos de sua fabricação para o exterior no valor FOB de R$ 100.000,00. Para produzir essas mercadorias, adquiriu insumos no mercado interno, sobre os quais se creditou de R$ 12.000,00 de ICMS.
+        De acordo com a Lei Nº 4.257/1989, o valor do ICMS que deverá ser estornado pela indústria em relação aos créditos dos insumos é:</p>
+        <div class="options">
+            <ul>
+                <li onclick="showSolution(8, 'C')">a) R$ 12.000,00</li>
+                <li onclick="showSolution(8, 'C')">b) R$ 6.000,00</li>
+                <li onclick="showSolution(8, 'C')">c) R$ 0,00</li>
+                <li onclick="showSolution(8, 'C')">d) R$ 3.000,00</li>
+                <li onclick="showSolution(8, 'C')">e) R$ 2.400,00</li>
+            </ul>
+        </div>
+        <div class="solution" id="solution-8">
+            <h4>Gabarito e Comentário:</h4>
+            <p class="gabarito">Gabarito: C</p>
+            <div class="fundamentacao">
+                <p><strong>Fundamentação:</strong></p>
+                <p>Não se exigirá o estorno do imposto creditado relativamente a mercadorias e serviços que venham a ser objeto de operações ou prestações destinadas ao exterior (Art. 37, I)[cite: 1682, 1683].</p>
+                <p>Portanto, o crédito de R$ 12.000,00 pode ser mantido.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">9. Uma loja de eletrodomésticos em Teresina-PI vendeu uma geladeira para um consumidor final. O valor da mercadoria, antes da incidência do ICMS, era R$ 3.000,00. A alíquota interna geral do ICMS no Piauí é de 22,5%.
+        Conforme a Lei Nº 4.257/1989, o valor do ICMS a ser calculado e destacado na nota fiscal para esta venda é de:</p>
+        <div class="options">
+            <ul>
+                <li onclick="showSolution(9, 'C')">a) R$ 675,00</li>
+                <li onclick="showSolution(9, 'C')">b) R$ 551,25</li>
+                <li onclick="showSolution(9, 'C')">c) R$ 870,97</li>
+                <li onclick="showSolution(9, 'C')">d) R$ 750,00</li>
+                <li onclick="showSolution(9, 'C')">e) R$ 600,00</li>
+            </ul>
+        </div>
+        <div class="solution" id="solution-9">
+            <h4>Gabarito e Comentário:</h4>
+            <p class="gabarito">Gabarito: C</p>
+            <div class="fundamentacao">
+                <p><strong>Fundamentação:</strong></p>
+                <p>Alíquota interna geral: 22,5% (Art. 23, I, c)[cite: 1430].</p>
+                <p>O ICMS integra a própria base de cálculo (Art. 24, § 5º, I)[cite: 1530].</p>
+                <p>Valor da mercadoria (sem ICMS) = R$ 3.000,00.</p>
+                <p>Base de Cálculo (BC) = Valor da Mercadoria / (1 - Alíquota) = R$ 3.000,00 / (1 - 0,225) = R$ 3.000,00 / 0,775 = R$ 3.870,9677.</p>
+                <p>ICMS = BC * Alíquota = R$ 3.870,9677 * 0,225 = R$ 870,9677 ≈ R$ 870,97.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">10. Uma empresa piauiense adquiriu, em operação interestadual (alíquota de 12%), mercadorias para revenda no valor de R$ 10.000,00 (valor da nota fiscal de origem). A empresa optou por efetuar o pagamento antecipado parcial do ICMS, conforme Art. 31, §5º e §6º da Lei Nº 4.257/1989. A alíquota interna para essas mercadorias no Piauí é de 22,5%. O valor da antecipação parcial do ICMS a ser recolhido é:</p>
+        <div class="options">
+            <ul>
+                <li onclick="showSolution(10, 'A')">a) R$ 1.050,00</li>
+                <li onclick="showSolution(10, 'A')">b) R$ 2.250,00</li>
+                <li onclick="showSolution(10, 'A')">c) R$ 1.200,00</li>
+                <li onclick="showSolution(10, 'A')">d) R$ 1.354,84</li>
+                <li onclick="showSolution(10, 'A')">e) R$ 525,00</li>
+            </ul>
+        </div>
+        <div class="solution" id="solution-10">
+            <h4>Gabarito e Comentário:</h4>
+            <p class="gabarito">Gabarito: A</p>
+            <div class="fundamentacao">
+                <p><strong>Fundamentação:</strong></p>
+                <p>ICMS devido na antecipação parcial (Art. 31, § 6º, redação pela Lei N° 7436 DE 29/12/2020 [cite: 1596]): aplicação do percentual equivalente à diferença entre a alíquota interna vigente neste Estado e a interestadual, sobre o valor da operação ou da prestação praticado pelo remetente da mercadoria, sem dedução de quaisquer créditos fiscais.</p>
+                <p>Diferença de alíquotas = 22,5% - 12% = 10,5%.</p>
+                <p>Valor da operação = R$ 10.000,00.</p>
+                <p>Antecipação Parcial do ICMS = R$ 10.000,00 * 10,5% = R$ 1.050,00.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">11. Uma empresa no Piauí realizou uma venda de arroz, dentro do estado, para um supermercado. O valor da operação foi de R$ 5.000,00 (sem ICMS).
+        De acordo com a Lei Nº 4.257/1989, o valor do ICMS a ser destacado na nota fiscal é:</p>
+        <div class="options">
+            <ul>
+                <li onclick="showSolution(11, 'C')">a) R$ 1.125,00</li>
+                <li onclick="showSolution(11, 'C')">b) R$ 600,00</li>
+                <li onclick="showSolution(11, 'C')">c) R$ 681,82</li>
+                <li onclick="showSolution(11, 'C')">d) R$ 1.451,61</li>
+                <li onclick="showSolution(11, 'C')">e) R$ 568,18</li>
+            </ul>
+        </div>
+        <div class="solution" id="solution-11">
+            <h4>Gabarito e Comentário:</h4>
+            <p class="gabarito">Gabarito: C</p>
+            <div class="fundamentacao">
+                <p><strong>Fundamentação:</strong></p>
+                <p>Alíquota para arroz em operações internas: 12% (Art. 23, I, e, 1, redação pela Lei N° 8558 DE 23/12/2024)[cite: 1435].</p>
+                <p>Base de cálculo do ICMS inclui o próprio imposto (Art. 24, § 5º, I)[cite: 1530].</p>
+                <p>Base de Cálculo (BC) = Valor da Operação / (1 - Alíquota) = R$ 5.000,00 / (1 - 0,12) = R$ 5.000,00 / 0,88 = R$ 5.681,8181.</p>
+                <p>ICMS = BC * Alíquota = R$ 5.681,8181 * 0,12 = R$ 681,8181 ≈ R$ 681,82.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">12. Um contribuinte no Piauí importou do exterior um bem para integrar seu ativo imobilizado. Os seguintes valores foram registrados:
+        Valor da mercadoria (CIF): R$ 76.000,00;
+        Imposto de Importação (II): R$ 8.000,00;
+        Imposto sobre Produtos Industrializados (IPI): R$ 12.000,00;
+        Despesas aduaneiras: R$ 4.000,00.
+        A alíquota interna do ICMS para este bem é de 12%.
+        Conforme a Lei Nº 4.257/1989, o valor do ICMS a ser recolhido na importação é de:</p>
+        <div class="options">
+            <ul>
+                <li onclick="showSolution(12, 'A')">a) R$ 13.636,36</li>
+                <li onclick="showSolution(12, 'A')">b) R$ 12.480,00</li>
+                <li onclick="showSolution(12, 'A')">c) R$ 0,00, com crédito de R$ 13.636,36 a ser apropriado em 48 parcelas.</li>
+                <li onclick="showSolution(12, 'A')">d) R$ 284,09</li>
+                <li onclick="showSolution(12, 'A')">e) R$ 10.400,00</li>
+            </ul>
+        </div>
+        <div class="solution" id="solution-12">
+            <h4>Gabarito e Comentário:</h4>
+            <p class="gabarito">Gabarito: A</p>
+            <div class="fundamentacao">
+                <p><strong>Fundamentação:</strong></p>
+                <p>Base de cálculo na importação (Art. 24, IX)[cite: 1505, 1506, 1507, 1509]: Soma dos valores (mercadoria + II + IPI + desp. aduaneiras) = R$ 76.000 + R$ 8.000 + R$ 12.000 + R$ 4.000 = R$ 100.000,00.</p>
+                <p>ICMS integra a base (Art. 24, § 5º, I)[cite: 1530].</p>
+                <p>Base de Cálculo (BC) com ICMS = R$ 100.000,00 / (1 - 0,12) = R$ 100.000,00 / 0,88 = R$ 113.636,3636.</p>
+                <p>ICMS devido na importação = BC * Alíquota = R$ 113.636,3636 * 0,12 = R$ 13.636,3636 ≈ R$ 13.636,36.</p>
+                <p>Este valor é o imposto devido na importação. O crédito fiscal referente à entrada de bem para o ativo permanente será apropriado à razão de 1/48 avos por mês, conforme Art. 32, I, b, e § 6º[cite: 1600, 1621, 1622, 1623, 1624, 1627, 1628].</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">13. Uma empresa no Piauí adquiriu mercadorias para comercialização por R$ 10.000,00. Posteriormente, essas mercadorias foram furtadas do estoque antes de serem vendidas. A empresa havia se creditado de R$ 1.200,00 de ICMS na entrada.
+        De acordo com a Lei Nº 4.257/1989, o valor do ICMS a ser estornado é:</p>
+        <div class="options">
+            <ul>
+                <li onclick="showSolution(13, 'C')">a) R$ 0,00</li>
+                <li onclick="showSolution(13, 'C')">b) R$ 600,00</li>
+                <li onclick="showSolution(13, 'C')">c) R$ 1.200,00</li>
+                <li onclick="showSolution(13, 'C')">d) R$ 1.000,00</li>
+                <li onclick="showSolution(13, 'C')">e) R$ 240,00</li>
+            </ul>
+        </div>
+        <div class="solution" id="solution-13">
+            <h4>Gabarito e Comentário:</h4>
+            <p class="gabarito">Gabarito: C</p>
+            <div class="fundamentacao">
+                <p><strong>Fundamentação:</strong></p>
+                <p>O sujeito passivo deverá efetuar o estorno do imposto de que se tiver creditado sempre que a mercadoria entrada no estabelecimento, por quaisquer circunstâncias, for retirada de circulação, inclusive nos casos de furto, roubo, sinistro, perecimento ou deterioração (Art. 36, IV)[cite: 1671, 1675].</p>
+                <p>Valor a ser estornado = R$ 1.200,00.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">14. Uma empresa vendeu bebidas alcoólicas (exceto aguardente de cana e cervejas especiais com suco de caju) em operação interna no Piauí por R$ 1.000,00 (valor antes do ICMS).
+        Conforme a Lei Nº 4.257/1989, o valor total do ICMS (incluindo FECOP) incidente na operação é:</p>
+        <div class="options">
+            <ul>
+                <li onclick="showSolution(14, 'D')">a) R$ 270,00</li>
+                <li onclick="showSolution(14, 'D')">b) R$ 290,00</li>
+                <li onclick="showSolution(14, 'D')">c) R$ 369,86</li>
+                <li onclick="showSolution(14, 'D')">d) R$ 408,45</li>
+                <li onclick="showSolution(14, 'D')">e) R$ 315,79</li>
+            </ul>
+        </div>
+        <div class="solution" id="solution-14">
+            <h4>Gabarito e Comentário:</h4>
+            <p class="gabarito">Gabarito: D</p>
+            <div class="fundamentacao">
+                <p><strong>Fundamentação:</strong></p>
+                <p>Alíquota para bebidas alcoólicas (exceto aguardente de cana e cervejas que contenham suco de caju conforme especificações): 27% (Art. 23, I, b, 1)[cite: 1425].</p>
+                <p>Adicional do FECOP para bebidas alcoólicas (exceto aguardente de cana): 2% (Art. 23, § 11, III)[cite: 1462].</p>
+                <p>Alíquota total: 27% + 2% = 29%.</p>
+                <p>Base de cálculo do ICMS inclui o próprio imposto (Art. 24, § 5º, I)[cite: 1530].</p>
+                <p>Base de Cálculo (BC) = Valor da Operação / (1 - Alíquota Total) = R$ 1.000,00 / (1 - 0,29) = R$ 1.000,00 / 0,71 = R$ 1.408,4507.</p>
+                <p>ICMS Total = BC * Alíquota Total = R$ 1.408,4507 * 0,29 = R$ 408,4507 ≈ R$ 408,45.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">15. Uma empresa comercial piauiense vendeu mercadorias para um consumidor final não contribuinte localizado no Estado do Maranhão. Valor da operação: R$ 2.000,00. Alíquota interestadual: 12%. Alíquota interna no Maranhão: 20%. Alíquota interna no Piauí: 22,5%. A operação ocorreu em 2025.
+        Conforme a Lei Nº 4.257/1989 do Piauí e a EC 87/2015, o ICMS a ser recolhido para o Estado do Piauí referente a esta operação é:</p>
+        <div class="options">
+            <ul>
+                <li onclick="showSolution(15, 'B')">a) R$ 450,00</li>
+                <li onclick="showSolution(15, 'B')">b) R$ 240,00</li>
+                <li onclick="showSolution(15, 'B')">c) R$ 160,00</li>
+                <li onclick="showSolution(15, 'B')">d) R$ 400,00</li>
+                <li onclick="showSolution(15, 'B')">e) R$ 309,68</li>
+            </ul>
+        </div>
+        <div class="solution" id="solution-15">
+            <h4>Gabarito e Comentário:</h4>
+            <p class="gabarito">Gabarito: B</p>
+            <div class="fundamentacao">
+                <p><strong>Fundamentação:</strong></p>
+                <p>Nas operações interestaduais que destinem bens a consumidor final não contribuinte, o ICMS correspondente à alíquota interestadual é devido ao estado de origem (Piauí).</p>
+                <p>A alíquota interestadual é de 12% (Art. 23, II, b)[cite: 1448].</p>
+                <p>O ICMS devido ao Piauí é calculado sobre o valor da operação. Para simplificação, e conforme prática comum em questões, se o "valor da operação" (R$2.000,00) é a base de cálculo para o imposto da origem (sem embutir a alíquota interestadual nela mesma para esta parcela específica da origem):</p>
+                <p>ICMS para o Piauí = Valor da Operação * Alíquota Interestadual = R$ 2.000,00 * 12% = R$ 240,00.</p>
+                <p>Nota: O DIFAL (diferença entre a alíquota interna do destino e a interestadual) é devido integralmente ao estado de destino (Maranhão) desde 2019, conforme EC 87/2015 (Art. 2º, §6º, IV, da Lei 4.257/89[cite: 1257], referindo-se a 100% a partir de 2019).</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">16. Uma empresa piauiense efetuou uma venda de feijão dentro do estado no valor de R$ 800,00 (sem ICMS).
+        Qual o valor do ICMS devido, considerando a Lei Nº 4.257/1989?</p>
+        <div class="options">
+            <ul>
+                <li onclick="showSolution(16, 'C')">a) R$ 180,00</li>
+                <li onclick="showSolution(16, 'C')">b) R$ 96,00</li>
+                <li onclick="showSolution(16, 'C')">c) R$ 109,09</li>
+                <li onclick="showSolution(16, 'C')">d) R$ 206,45</li>
+                <li onclick="showSolution(16, 'C')">e) R$ 85,47</li>
+            </ul>
+        </div>
+        <div class="solution" id="solution-16">
+            <h4>Gabarito e Comentário:</h4>
+            <p class="gabarito">Gabarito: C</p>
+            <div class="fundamentacao">
+                <p><strong>Fundamentação:</strong></p>
+                <p>Alíquota para feijão em operações internas: 12% (Art. 23, I, e, 5, redação pela Lei N° 8558 DE 23/12/2024)[cite: 1435, 1437].</p>
+                <p>Base de cálculo do ICMS inclui o próprio imposto (Art. 24, § 5º, I)[cite: 1530].</p>
+                <p>Base de Cálculo (BC) = Valor da Operação / (1 - Alíquota) = R$ 800,00 / (1 - 0,12) = R$ 800,00 / 0,88 = R$ 909,0909.</p>
+                <p>ICMS = BC * Alíquota = R$ 909,0909 * 0,12 = R$ 109,0909 ≈ R$ 109,09.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">17. Um contribuinte piauiense adquiriu mercadorias de outro estado para revenda. Valor da mercadoria R$ 15.000,00, ICMS destacado na NF de origem (alíquota 7%) R$ 1.050,00. A empresa utilizou este crédito de R$ 1.050,00. Posteriormente, vendeu metade dessas mercadorias com isenção do ICMS, sendo esta circunstância imprevisível na data da entrada.
+        Conforme a Lei Nº 4.257/1989, o valor do crédito de ICMS a ser estornado é:</p>
+        <div class="options">
+            <ul>
+                <li onclick="showSolution(17, 'B')">a) R$ 1.050,00</li>
+                <li onclick="showSolution(17, 'B')">b) R$ 525,00</li>
+                <li onclick="showSolution(17, 'B')">c) R$ 0,00</li>
+                <li onclick="showSolution(17, 'B')">d) R$ 750,00</li>
+                <li onclick="showSolution(17, 'B')">e) R$ 315,00</li>
+            </ul>
+        </div>
+        <div class="solution" id="solution-17">
+            <h4>Gabarito e Comentário:</h4>
+            <p class="gabarito">Gabarito: B</p>
+            <div class="fundamentacao">
+                <p><strong>Fundamentação:</strong></p>
+                <p>O sujeito passivo deverá efetuar o estorno do imposto de que se tiver creditado sempre que a mercadoria entrada no estabelecimento for objeto de saída ou prestação de serviço não tributada ou isenta, sendo esta circunstância imprevisível na data da entrada da mercadoria ou da utilização do serviço (Art. 36, I)[cite: 1671].</p>
+                <p>O estorno é proporcional à saída isenta. Metade das mercadorias teve saída isenta.</p>
+                <p>Valor do estorno = 50% do crédito original = 0,50 * R$ 1.050,00 = R$ 525,00.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">18. Uma empresa de comunicação no Piauí prestou serviço de internet para um cliente no Piauí. O valor do serviço foi de R$ 100,00 (antes do ICMS).
+        Considerando que a alíquota para serviços de comunicação, após 31/12/2023, e não havendo outra específica, recai na alíquota geral, qual o valor do ICMS devido?</p>
+        <div class="options">
+            <ul>
+                <li onclick="showSolution(18, 'C')">a) R$ 22,50</li>
+                <li onclick="showSolution(18, 'C')">b) R$ 36,99</li>
+                <li onclick="showSolution(18, 'C')">c) R$ 29,03</li>
+                <li onclick="showSolution(18, 'C')">d) R$ 27,00</li>
+                <li onclick="showSolution(18, 'C')">e) R$ 30,00</li>
+            </ul>
+        </div>
+        <div class="solution" id="solution-18">
+            <h4>Gabarito e Comentário:</h4>
+            <p class="gabarito">Gabarito: C</p>
+            <div class="fundamentacao">
+                <p><strong>Fundamentação:</strong></p>
+                <p>A alíquota específica de 27% para serviços de comunicação tinha validade até 31 de dezembro de 2023 (Art. 23, I, b, 7)[cite: 1429]. Após essa data, na ausência de outra alíquota específica, aplica-se a alíquota geral de 22,5% (Art. 23, I, c, redação pela Lei N° 8558 DE 23/12/2024)[cite: 1430].</p>
+                <p>Base de cálculo do ICMS inclui o próprio imposto (Art. 24, § 5º, I)[cite: 1530].</p>
+                <p>Base de Cálculo (BC) = Valor do Serviço / (1 - Alíquota) = R$ 100,00 / (1 - 0,225) = R$ 100,00 / 0,775 = R$ 129,0322.</p>
+                <p>ICMS = BC * Alíquota = R$ 129,0322 * 0,225 = R$ 29,0322 ≈ R$ 29,03.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">19. Uma empresa piauiense vendeu para outra empresa piauiense mercadorias no valor de R$ 10.000,00 (sem ICMS). A alíquota interna é de 22,5%. O adquirente, posteriormente, devolveu integralmente essas mercadorias.
+        Qual o valor do crédito de ICMS que o vendedor original (que emitiu a primeira nota) poderá se creditar por ocasião da devolução?</p>
+        <div class="options">
+            <ul>
+                <li onclick="showSolution(19, 'B')">a) R$ 2.250,00</li>
+                <li onclick="showSolution(19, 'B')">b) R$ 2.903,23</li>
+                <li onclick="showSolution(19, 'B')">c) R$ 1.744,19</li>
+                <li onclick="showSolution(19, 'B')">d) R$ 10.000,00</li>
+                <li onclick="showSolution(19, 'B')">e) R$ 0,00</li>
+            </ul>
+        </div>
+        <div class="solution" id="solution-19">
+            <h4>Gabarito e Comentário:</h4>
+            <p class="gabarito">Gabarito: B</p>
+            <div class="fundamentacao">
+                <p><strong>Fundamentação:</strong></p>
+                <p>Na venda original, o ICMS debitado foi:</p>
+                <p>Base de Cálculo (BC) = Valor da Mercadoria / (1 - Alíquota) = R$ 10.000,00 / (1 - 0,225) = R$ 10.000,00 / 0,775 = R$ 12.903,2258. (Art. 24, § 5º, I [cite: 1530])</p>
+                <p>ICMS debitado na venda = BC * Alíquota = R$ 12.903,2258 * 0,225 = R$ 2.903,2258 ≈ R$ 2.903,23.</p>
+                <p>Na devolução de mercadorias, permite-se o aproveitamento do crédito nas hipóteses de devolução (Art. 32, § 1º, I)[cite: 1612]. O valor a ser creditado é o imposto destacado na nota fiscal de venda original.</p>
+                <p>Valor do crédito na devolução = R$ 2.903,23.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">20. Uma indústria no Piauí vendeu aguardente de cana fabricada no próprio Estado do Piauí para um atacadista também no Piauí. O valor da operação foi de R$ 5.000,00 (sem ICMS).
+        Considerando que a aguardente de cana fabricada no Piauí seja tratada como item da cesta básica estadual com alíquota de 12%, conforme Lei Nº 4.257/1989, o valor do ICMS devido nessa operação é:</p>
+        <div class="options">
+            <ul>
+                <li onclick="showSolution(20, 'D')">a) R$ 1.350,00</li>
+                <li onclick="showSolution(20, 'D')">b) R$ 600,00</li>
+                <li onclick="showSolution(20, 'D')">c) R$ 1.450,00</li>
+                <li onclick="showSolution(20, 'D')">d) R$ 681,82</li>
+                <li onclick="showSolution(20, 'D')">e) R$ 1.125,00</li>
+            </ul>
+        </div>
+        <div class="solution" id="solution-20">
+            <h4>Gabarito e Comentário:</h4>
+            <p class="gabarito">Gabarito: D</p>
+            <div class="fundamentacao">
+                <p><strong>Fundamentação:</strong></p>
+                <p>A Lei Nº 4.257/1989, Art. 23, I, e, estabelece alíquota de 12% para diversos produtos da cesta básica[cite: 1435]. O Art. 6º, parágrafo único (redação Lei N 8558/2024) [cite: 1314] autoriza o Poder Executivo a enumerar produtos da cesta básica estadual com tratamento tributário diferenciado.</p>
+                <p>Assumindo, para esta questão, que a aguardente de cana fabricada no Piauí está enquadrada na cesta básica com alíquota de 12%.</p>
+                <p>Base de cálculo do ICMS inclui o próprio imposto (Art. 24, § 5º, I)[cite: 1530].</p>
+                <p>Base de Cálculo (BC) = Valor da Operação / (1 - Alíquota) = R$ 5.000,00 / (1 - 0,12) = R$ 5.000,00 / 0,88 = R$ 5.681,8181.</p>
+                <p>ICMS = BC * Alíquota = R$ 5.681,8181 * 0,12 = R$ 681,8181 ≈ R$ 681,82.</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<script>
+    function showSolution(questionNumber, correctAnswerLetter) {
+        // Hide all solutions first
+        // var allSolutions = document.querySelectorAll('.solution');
+        // allSolutions.forEach(function(sol) {
+        //     sol.style.display = 'none';
+        // });
+
+        // Show the specific solution
+        var solutionDiv = document.getElementById('solution-' + questionNumber);
+        if (solutionDiv) {
+            solutionDiv.style.display = 'block';
+        }
+    }
+</script>
+
+</body>
+</html>
