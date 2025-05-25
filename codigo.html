@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infográfico Interativo: LGPD - Capítulo I - Disposições Preliminares</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F4F5F7; /* Background Light */
+            color: #172B4D; /* Text Dark */
+        }
+        /* Chosen Palette: "Azul Vibrante e Verde Esperança" */
+        .primary-blue { color: #0052CC; }
+        .bg-primary-blue { background-color: #0052CC; }
+        .border-primary-blue { border-color: #0052CC; }
+
+        .secondary-green { color: #00875A; }
+        .bg-secondary-green { background-color: #00875A; }
+
+        .accent-yellow { color: #FFAB00; }
+        .bg-accent-yellow { background-color: #FFAB00; }
+
+        .text-dark { color: #172B4D; }
+        .card {
+            background-color: #FFFFFF; /* Card Background */
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 32px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -1px rgba(0,0,0,0.04);
+            transition: all 0.3s ease-in-out;
+        }
+        .card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+            transform: translateY(-4px);
+        }
+        .article-title {
+            font-size: 1.75rem; /* 28px */
+            font-weight: 700;
+            color: #0052CC; /* Primary Blue */
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+        }
+        .article-title-icon {
+            font-size: 2rem; /* 32px */
+            margin-right: 12px;
+        }
+        .section-heading {
+            font-size: 1.25rem; /* 20px */
+            font-weight: 600;
+            color: #00875A; /* Secondary Green */
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+        .explanation-text {
+            font-size: 1rem; /* 16px */
+            line-height: 1.7;
+            color: #42526E; /* Softer dark text */
+            margin-bottom: 12px;
+        }
+        .lei-seca-text {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #F4F5F7;
+            padding: 12px;
+            border-radius: 6px;
+            font-style: italic;
+            color: #505F79;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            border-left: 4px solid #0052CC;
+        }
+        .list-item-icon {
+            margin-right: 8px;
+            color: #FFAB00; /* Accent Yellow */
+            flex-shrink: 0;
+            margin-top: 5px;
+        }
+        .highlight {
+            color: #0052CC; /* Primary Blue */
+            font-weight: 600;
+        }
+        .emphasis {
+            color: #00875A; /* Secondary Green */
+            font-weight: 600;
+        }
+        .nav-item {
+            padding: 8px 12px;
+            margin: 4px;
+            border-radius: 8px;
+            transition: background-color 0.2s, color 0.2s;
+            font-weight: 500;
+        }
+        .nav-item:hover {
+            background-color: #0052CC;
+            color: white;
+        }
+        .sticky-nav {
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(8px);
+            padding-top: 8px;
+            padding-bottom: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .definition-item {
+            border-left: 3px solid #FFAB00; /* Accent Yellow */
+            padding-left: 12px;
+            margin-bottom: 16px;
+        }
+        .definition-term {
+            font-weight: 700;
+            color: #0052CC; /* Primary Blue */
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-primary-blue text-white py-12 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-3">Desvendando a LGPD</h1>
+            <p class="text-xl md:text-2xl font-light">Capítulo I: As Disposições Preliminares Essenciais</p>
+        </div>
+    </header>
+
+    <nav class="sticky-nav mb-8">
+        <div class="container mx-auto px-4 flex flex-wrap justify-center">
+            <a href="#art1" class="nav-item text-primary-blue">Art. 1º</a>
+            <a href="#art2" class="nav-item text-primary-blue">Art. 2º</a>
+            <a href="#art3" class="nav-item text-primary-blue">Art. 3º</a>
+            <a href="#art4" class="nav-item text-primary-blue">Art. 4º</a>
+            <a href="#art5" class="nav-item text-primary-blue">Art. 5º</a>
+            <a href="#art6" class="nav-item text-primary-blue">Art. 6º</a>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-4 md:p-8">
+        <section class="mb-12 text-center">
+            <h2 class="text-3xl font-bold text-dark mb-4">Bem-vindo ao Guia Visual da LGPD!</h2>
+            <p class="text-lg explanation-text max-w-3xl mx-auto">
+                A Lei Geral de Proteção de Dados Pessoais (LGPD) é fundamental para entender como suas informações são tratadas.
+                Este infográfico foca no <span class="highlight">Capítulo I</span>, que estabelece a base de toda a lei: seus objetivos, quem deve segui-la, seus valores fundamentais e onde ela se aplica (ou não). Vamos explorar cada artigo de forma clara e direta!
+            </p>
+        </section>
+
+        <article id="art1" class="card">
+            <h3 class="article-title"><span class="article-title-icon">🎯</span>Art. 1º - Objetivo e Âmbito da LGPD</h3>
+            <div class="section-heading">Objetivo Principal da Lei</div>
+            <p class="lei-seca-text">"Esta Lei dispõe sobre o tratamento de dados pessoais, inclusive nos meios digitais, por pessoa natural ou por pessoa jurídica de direito público ou privado, com o objetivo de proteger os direitos fundamentais de liberdade e de privacidade e o livre desenvolvimento da personalidade da pessoa natural."</p>
+            <p class="explanation-text">
+                <span class="highlight">Em resumo:</span> A LGPD define as regras para o <span class="emphasis">tratamento de dados pessoais</span> (qualquer informação que identifique alguém), seja em formato digital ou físico. Isso vale para indivíduos ou organizações (públicas ou privadas).
+                O grande objetivo é <span class="emphasis">proteger nossos direitos fundamentais</span> de liberdade, privacidade e o livre desenvolvimento da nossa personalidade. Pense nela como um <span class="highlight">escudo protetor</span> para suas informações!
+            </p>
+
+            <div class="section-heading">Abrangência Nacional</div>
+            <p class="lei-seca-text">"As normas gerais contidas nesta Lei são de interesse nacional e devem ser observadas pela União, Estados, Distrito Federal e Municípios."</p>
+            <p class="explanation-text">
+                <span class="highlight">Importante:</span> As regras da LGPD são tão cruciais que valem para o <span class="emphasis">país inteiro</span>. Todos os níveis de governo (federal, estadual e municipal) devem segui-las.
+            </p>
+        </article>
+
+        <article id="art2" class="card">
+            <h3 class="article-title"><span class="article-title-icon">🏛️</span>Art. 2º - Fundamentos da Proteção de Dados Pessoais</h3>
+            <div class="section-heading">Pilares da LGPD</div>
+            <p class="lei-seca-text">"A disciplina da proteção de dados pessoais tem como FUNDAMENTOS:"</p>
+            <p class="explanation-text">
+                Estes são os <span class="highlight">valores essenciais</span>, os pilares que sustentam toda a Lei Geral de Proteção de Dados. Eles guiam como a proteção de dados deve ser entendida e aplicada.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <div class="flex items-start p-4 bg-blue-50 rounded-lg border border-blue-200">
+                    <span class="list-item-icon text-2xl">🛡️</span>
+                    <div><strong class="text-primary-blue">Respeito à privacidade:</strong> <span class="explanation-text block">Garantir que nossa vida particular seja respeitada.</span></div>
+                </div>
+                <div class="flex items-start p-4 bg-blue-50 rounded-lg border border-blue-200">
+                    <span class="list-item-icon text-2xl">🗣️</span>
+                    <div><strong class="text-primary-blue">Autodeterminação informativa:</strong> <span class="explanation-text block">Você tem o direito de controlar suas próprias informações e decidir o que acontece com elas.</span></div>
+                </div>
+                <div class="flex items-start p-4 bg-blue-50 rounded-lg border border-blue-200">
+                    <span class="list-item-icon text-2xl">📢</span>
+                    <div><strong class="text-primary-blue">Liberdade de expressão, informação, comunicação e opinião:</strong> <span class="explanation-text block">A proteção de dados convive com o direito de se expressar, informar, comunicar e opinar livremente.</span></div>
+                </div>
+                <div class="flex items-start p-4 bg-blue-50 rounded-lg border border-blue-200">
+                    <span class="list-item-icon text-2xl">🤫</span>
+                    <div><strong class="text-primary-blue">Inviolabilidade da intimidade, da honra e da imagem:</strong> <span class="explanation-text block">Proteger sua vida íntima, reputação e como você é visto pela sociedade contra usos indevidos de dados.</span></div>
+                </div>
+                <div class="flex items-start p-4 bg-blue-50 rounded-lg border border-blue-200">
+                    <span class="list-item-icon text-2xl">💡</span>
+                    <div><strong class="text-primary-blue">Desenvolvimento econômico, tecnológico e inovação:</strong> <span class="explanation-text block">A LGPD busca equilibrar a proteção de dados com o avanço da economia, tecnologia e novas ideias.</span></div>
+                </div>
+                <div class="flex items-start p-4 bg-blue-50 rounded-lg border border-blue-200">
+                    <span class="list-item-icon text-2xl">⚖️</span>
+                    <div><strong class="text-primary-blue">Livre iniciativa, livre concorrência e defesa do consumidor:</strong> <span class="explanation-text block">Considera a importância de um mercado justo, da liberdade para empreender e da proteção ao consumidor.</span></div>
+                </div>
+                <div class="flex items-start p-4 bg-blue-50 rounded-lg border border-blue-200 md:col-span-2">
+                    <span class="list-item-icon text-2xl">🌍</span>
+                    <div><strong class="text-primary-blue">Direitos humanos, livre desenvolvimento da personalidade, dignidade e exercício da cidadania:</strong> <span class="explanation-text block">Conecta a proteção de dados a direitos maiores, como dignidade e cidadania.</span></div>
+                </div>
+            </div>
+        </article>
+
+        <article id="art3" class="card">
+            <h3 class="article-title"><span class="article-title-icon">✅</span>Art. 3º - Aplicabilidade da LGPD (Onde ela Vale)</h3>
+            <div class="section-heading">Condições Gerais de Aplicação</div>
+            <p class="lei-seca-text">"Esta Lei aplica-se a qualquer operação de tratamento realizada por pessoa natural ou por pessoa jurídica de direito público ou privado, independentemente do meio, do país de sua sede ou do país onde estejam localizados os dados, desde que:"</p>
+            <p class="explanation-text">
+                A LGPD se aplica a <span class="highlight">qualquer tratamento de dados</span>, não importa se é online ou offline, quem faz (pessoa ou empresa, pública ou privada) ou onde a empresa está, <span class="emphasis">DESDE QUE</span> uma das seguintes condições seja atendida:
+            </p>
+            <ul class="space-y-3 mt-4">
+                <li class="flex items-start"><span class="list-item-icon text-xl">🇧🇷</span><span class="explanation-text"><strong class="emphasis">Tratamento em território nacional:</strong> Se a operação de tratamento de dados acontece no Brasil.</span></li>
+                <li class="flex items-start"><span class="list-item-icon text-xl">🛍️</span><span class="explanation-text"><strong class="emphasis">Oferta a indivíduos no Brasil OU tratamento de dados de indivíduos no Brasil:</strong> Se a empresa (mesmo estrangeira) oferece produtos/serviços a pessoas no Brasil ou trata dados de pessoas que estão aqui.</span></li>
+                <li class="flex items-start"><span class="list-item-icon text-xl">📥</span><span class="explanation-text"><strong class="emphasis">Dados coletados no território nacional:</strong> Se os dados pessoais foram coletados no Brasil.</span></li>
+            </ul>
+
+            <div class="section-heading">§ 1º - O que significa "Coletados no Território Nacional"?</div>
+            <p class="lei-seca-text">"Consideram-se COLETADOS no território nacional os dados pessoais cujo titular nele se encontre no momento da coleta."</p>
+            <p class="explanation-text">
+                Este parágrafo esclarece: "coletados no território nacional" significa que o <span class="highlight">dono dos dados (titular) estava no Brasil</span> quando a coleta aconteceu.
+            </p>
+
+            <div class="section-heading">§ 2º - Uma Exceção Importante</div>
+            <p class="lei-seca-text">"Excetua-se do disposto no inciso I deste artigo o tratamento de dados previsto no inciso IV do caput do art. 4º desta Lei."</p>
+            <p class="explanation-text">
+                Existe uma exceção à regra de "tratamento no território nacional". Ela se refere a uma situação específica de <span class="emphasis">dados vindos de fora</span> que não têm muita conexão com o Brasil, detalhada no Artigo 4º, inciso IV.
+            </p>
+        </article>
+
+        <article id="art4" class="card">
+            <h3 class="article-title"><span class="article-title-icon">🚫</span>Art. 4º - Não Aplicabilidade da LGPD (Onde ela NÃO Vale)</h3>
+            <div class="section-heading">Situações Específicas de Não Aplicação</div>
+            <p class="lei-seca-text">"Esta Lei NÃO SE APLICA ao tratamento de dados pessoais:"</p>
+            <p class="explanation-text">
+                A LGPD <span class="highlight">NÃO</span> impõe suas regras nas seguintes situações bem específicas:
+            </p>
+            <ul class="space-y-4 mt-4">
+                <li class="p-4 bg-red-50 rounded-lg border border-red-200">
+                    <strong class="text-red-700">I - Fins exclusivamente particulares E não econômicos (por pessoa natural):</strong>
+                    <span class="explanation-text block">Uso de dados para fins estritamente pessoais, sem qualquer interesse financeiro. Exemplo: sua agenda de contatos pessoal.</span>
+                </li>
+                <li class="p-4 bg-red-50 rounded-lg border border-red-200">
+                    <strong class="text-red-700">II - Fins exclusivamente: a) Jornalístico e artísticos; OU b) Acadêmicos:</strong>
+                    <span class="explanation-text block">Para jornalismo, atividades artísticas ou fins acadêmicos. <strong class="text-red-600">Atenção:</strong> Para fins acadêmicos, algumas partes da LGPD (arts. 7º e 11, sobre bases legais e dados sensíveis) ainda se aplicam!</span>
+                </li>
+                <li class="p-4 bg-red-50 rounded-lg border border-red-200">
+                    <strong class="text-red-700">III - Fins exclusivos de: a) Segurança pública; b) Defesa nacional; c) Segurança do Estado; OU d) Atividades de investigação e repressão de infrações penais:</strong>
+                    <span class="explanation-text block">Para segurança nacional, defesa, investigações criminais, etc. Estes casos geralmente são cobertos por leis específicas.</span>
+                </li>
+                <li class="p-4 bg-red-50 rounded-lg border border-red-200">
+                    <strong class="text-red-700">IV - Dados de fora do território nacional (com condições específicas):</strong>
+                    <span class="explanation-text block">Dados que vêm de fora, não são usados por empresas brasileiras, nem transferidos internacionalmente (exceto de volta para o país de origem), E o país de origem já oferece um grau de proteção de dados pessoais adequado ao previsto na LGPD.</span>
+                </li>
+            </ul>
+            <div class="section-heading">Detalhes sobre o Inciso III (Segurança, Defesa, Investigação)</div>
+            <p class="explanation-text">
+                <strong class="highlight">§ 1º:</strong> O tratamento de dados para fins de segurança pública, defesa, etc., deve ser regido por <span class="emphasis">legislação específica</span>. Essa lei deve prever medidas proporcionais e estritamente necessárias, respeitando o devido processo legal, os princípios gerais de proteção e os direitos do titular previstos na LGPD.
+            </p>
+            <p class="explanation-text">
+                <strong class="highlight">§ 2º e § 4º:</strong> Empresas privadas <span class="emphasis">geralmente não podem</span> tratar dados para esses fins de segurança pública. Há exceções, como em procedimentos sob tutela de pessoa jurídica de direito público (com informe à autoridade nacional) ou se a empresa privada tiver capital integralmente constituído pelo poder público. Em nenhum caso uma empresa privada comum pode tratar a totalidade de um banco de dados de segurança pública.
+            </p>
+        </article>
+
+        <article id="art5" class="card">
+            <h3 class="article-title"><span class="article-title-icon">📖</span>Art. 5º - Definições (O Glossário da LGPD)</h3>
+            <div class="section-heading">O Dicionário da Lei</div>
+            <p class="lei-seca-text">"Para os fins desta Lei, considera-se:"</p>
+            <p class="explanation-text">
+                Este artigo é crucial! Ele funciona como um <span class="highlight">dicionário</span>, explicando os termos chave usados em toda a LGPD. Entender essas definições é o primeiro passo para compreender a lei.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <div class="definition-item"><p><strong class="definition-term">Dado Pessoal:</strong> <span class="explanation-text">Qualquer informação relacionada a pessoa natural identificada ou identificável (nome, CPF, e-mail, foto, etc.).</span></p></div>
+                <div class="definition-item"><p><strong class="definition-term">Dado Pessoal Sensível:</strong> <span class="explanation-text">Dado pessoal sobre origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou a organização de caráter religioso, filosófico ou político, dado referente à saúde ou à vida sexual, dado genético ou biométrico, quando vinculado a uma pessoa natural. Merecem proteção extra por poderem causar discriminação.</span></p></div>
+                <div class="definition-item"><p><strong class="definition-term">Dado Anonimizado:</strong> <span class="explanation-text">Dado relativo a titular que não possa ser identificado, considerando a utilização de meios técnicos razoáveis e disponíveis na ocasião de seu tratamento. Em regra, não é mais considerado dado pessoal (Art. 12).</span></p></div>
+                <div class="definition-item"><p><strong class="definition-term">Titular:</strong> <span class="explanation-text">Você! A pessoa natural a quem se referem os dados pessoais que são objeto de tratamento.</span></p></div>
+                <div class="definition-item"><p><strong class="definition-term">Controlador:</strong> <span class="explanation-text">Pessoa natural ou jurídica, de direito público ou privado, a quem competem as decisões referentes ao tratamento de dados pessoais (ex: a empresa que coleta seus dados).</span></p></div>
+                <div class="definition-item"><p><strong class="definition-term">Operador:</strong> <span class="explanation-text">Pessoa natural ou jurídica, de direito público ou privado, que realiza o tratamento de dados pessoais em nome do controlador (ex: um serviço de e-mail marketing contratado).</span></p></div>
+                <div class="definition-item"><p><strong class="definition-term">Tratamento:</strong> <span class="explanation-text">Toda operação realizada com dados pessoais, como as que se referem a coleta, produção, recepção, classificação, utilização, acesso, reprodução, transmissão, distribuição, processamento, arquivamento, armazenamento, eliminação, avaliação ou controle da informação, modificação, comunicação, transferência, difusão ou extração. Basicamente, qualquer ação feita com dados pessoais.</span></p></div>
+                <div class="definition-item"><p><strong class="definition-term">Anonimização:</strong> <span class="explanation-text">Utilização de meios técnicos razoáveis e disponíveis no momento do tratamento, por meio dos quais um dado perde a possibilidade de associação, direta ou indireta, a um indivíduo. O processo de transformar um dado pessoal em um dado anonimizado.</span></p></div>
+                <div class="definition-item"><p><strong class="definition-term">Consentimento:</strong> <span class="explanation-text">Manifestação livre, informada e inequívoca pela qual o titular concorda com o tratamento de seus dados pessoais para uma finalidade determinada. Sua autorização clara e específica.</span></p></div>
+            </div>
+        </article>
+
+        <article id="art6" class="card">
+            <h3 class="article-title"><span class="article-title-icon">📜</span>Art. 6º - Princípios do Tratamento de Dados Pessoais</h3>
+            <div class="section-heading">As Regras de Ouro do Tratamento de Dados</div>
+            <p class="lei-seca-text">"As atividades de tratamento de dados pessoais deverão observar a boa-fé e os seguintes princípios:"</p>
+            <p class="explanation-text">
+                Estes são os <span class="highlight">princípios fundamentais</span> que devem ser seguidos em <span class="emphasis">QUALQUER</span> tratamento de dados pessoais, sempre agindo de <span class="emphasis">boa-fé</span>. São as "regras de ouro" que garantem um tratamento justo e respeitoso.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+                <div class="p-4 bg-green-50 rounded-lg border border-green-200"><strong class="text-secondary-green block mb-1">I - Finalidade:</strong> <span class="explanation-text text-sm">Realização do tratamento para propósitos legítimos, específicos, explícitos e informados ao titular. Nada de desviar o uso depois!</span></div>
+                <div class="p-4 bg-green-50 rounded-lg border border-green-200"><strong class="text-secondary-green block mb-1">II - Adequação:</strong> <span class="explanation-text text-sm">Compatibilidade do tratamento com as finalidades informadas ao titular, de acordo com o contexto. O uso dos dados deve fazer sentido.</span></div>
+                <div class="p-4 bg-green-50 rounded-lg border border-green-200"><strong class="text-secondary-green block mb-1">III - Necessidade:</strong> <span class="explanation-text text-sm">Limitação do tratamento ao mínimo necessário para realizar suas finalidades. "Menos é mais".</span></div>
+                <div class="p-4 bg-green-50 rounded-lg border border-green-200"><strong class="text-secondary-green block mb-1">IV - Livre Acesso:</strong> <span class="explanation-text text-sm">Garantia, aos titulares, de consulta facilitada e gratuita sobre a forma e a duração do tratamento, e sobre a integralidade de seus dados.</span></div>
+                <div class="p-4 bg-green-50 rounded-lg border border-green-200"><strong class="text-secondary-green block mb-1">V - Qualidade dos Dados:</strong> <span class="explanation-text text-sm">Garantia de exatidão, clareza, relevância e atualização dos dados, conforme a necessidade e para cumprir a finalidade.</span></div>
+                <div class="p-4 bg-green-50 rounded-lg border border-green-200"><strong class="text-secondary-green block mb-1">VI - Transparência:</strong> <span class="explanation-text text-sm">Garantia de informações claras, precisas e facilmente acessíveis sobre o tratamento e os agentes, observados segredos comercial e industrial.</span></div>
+                <div class="p-4 bg-green-50 rounded-lg border border-green-200"><strong class="text-secondary-green block mb-1">VII - Segurança:</strong> <span class="explanation-text text-sm">Utilização de medidas técnicas e administrativas aptas a proteger os dados de acessos não autorizados e de situações ilícitas ou acidentais.</span></div>
+                <div class="p-4 bg-green-50 rounded-lg border border-green-200"><strong class="text-secondary-green block mb-1">VIII - Prevenção:</strong> <span class="explanation-text text-sm">Adoção de medidas para prevenir a ocorrência de danos em virtude do tratamento de dados pessoais.</span></div>
+                <div class="p-4 bg-green-50 rounded-lg border border-green-200"><strong class="text-secondary-green block mb-1">IX - Não Discriminação:</strong> <span class="explanation-text text-sm">Impossibilidade de realização do tratamento para fins discriminatórios, ilícitos ou abusivos.</span></div>
+                <div class="p-4 bg-green-50 rounded-lg border border-green-200 sm:col-span-2 lg:col-span-1"><strong class="text-secondary-green block mb-1">X - Responsabilização e Prestação de Contas:</strong> <span class="explanation-text text-sm">Demonstração, pelo agente, da adoção de medidas eficazes e capazes de comprovar a observância e o cumprimento das normas de proteção de dados.</span></div>
+            </div>
+        </article>
+
+        <section class="mt-16 text-center card bg-primary-blue">
+            <h2 class="text-3xl font-bold mb-4 text-gray-900">Concluindo o Capítulo I</h2>
+            <p class="text-lg leading-relaxed max-w-3xl mx-auto text-gray-900">
+                As Disposições Preliminares da LGPD (Artigos 1º a 6º) são a espinha dorsal da lei. Elas definem o <span class="font-semibold text-yellow-300">propósito</span> da LGPD, seus <span class="font-semibold text-yellow-300">valores fundamentais</span>, onde ela <span class="font-semibold text-yellow-300">se aplica</span> (e onde não), o <span class="font-semibold text-yellow-300">significado dos termos chave</span> e os <span class="font-semibold text-yellow-300">princípios</span> que devem guiar todo e qualquer tratamento de dados pessoais. Compreender bem este capítulo é essencial para navegar pelo restante da lei e garantir a proteção dos seus dados!
+            </p>
+        </section>
+    </main>
+
+    <footer class="text-center py-8 mt-12 border-t border-gray-200">
+        <p class="text-sm text-gray-600">&copy; <span id="currentYear"></span> Infográfico LGPD - Disposições Preliminares. Conteúdo adaptado para fins didáticos.</p>
+        <p class="text-xs text-gray-500 mt-1">Este material não substitui a consulta à legislação oficial.</p>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
